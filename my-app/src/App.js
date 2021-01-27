@@ -20,7 +20,7 @@ function App() {
         </a>
       </header>
       <div>
-        <Comment />
+        <Comment name={"SeoYeon Moon"} content={'Hello World'}/>
       </div>
     </div>
   );

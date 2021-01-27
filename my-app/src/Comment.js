@@ -46,10 +46,10 @@ class Comment extends React.Component {
                 </div>
                 <div style={styles.commentContainer}>
                     <div style={styles.nameText}>
-                        {'Seoyeon Moon'}
+                        {this.props.name}
                     </div>
                     <span style={styles.contentText}>
-                        {'My Comment!'}
+                        {this.props.content}
                     </span>
                 </div>
             </div>
