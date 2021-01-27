@@ -2,6 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import Comment from './Comment';
 
+const comments = [
+  {name: "SeoYeon Moon", content:'Hello World'},
+  {name: "Luna", content: 'I want see Movie'},
+  {name: "Diana", content: 'Today is Wed'},
+];
+
 function App() {
   return (
     <div className="App" style={{padding: 16, backgroundColor: '#282c34'}}>
@@ -20,7 +26,13 @@ function App() {
         </a>
       </header>
       <div>
-        <Comment name={"SeoYeon Moon"} content={'Hello World'}/>
+        {comments.map((comment,index) => {
+          return  (
+            <Comment
+              name={comment.name}
+              content={comment.content}/>
+          )
+        })}
       </div>
     </div>
   );
