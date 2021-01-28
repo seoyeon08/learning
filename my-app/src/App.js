@@ -25,6 +25,9 @@ class App extends React.Component {
       if (comments.length < commentsFromServer.length){
         let index = comments.length;
         comments.push(commentsFromServer[index]);
+        this.setState({
+          comments: comments
+        });
       } else if (timer) {
         clearInterval(timer);
       }
