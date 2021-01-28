@@ -8,8 +8,15 @@ const comments = [
   {name: "Diana", content: 'Today is Wed'},
 ];
 
-function App() {
-  return (
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+
+    };
+  }
+  render() {
+    return (
     <div className="App" style={{padding: 16, backgroundColor: '#282c34'}}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -35,7 +42,8 @@ function App() {
         })}
       </div>
     </div>
-  );
+    );
+  }
 }
 
 export default App;
