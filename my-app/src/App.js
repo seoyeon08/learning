@@ -2,18 +2,35 @@ import logo from './logo.svg';
 import './App.css';
 import Comment from './Comment';
 
+const commentsFromServer = [
+  {name: "SeoYeon Moon", content:'Hello World'},
+  {name: "Luna", content: 'I want see Movie'},
+  {name: "Diana", content: 'Today is Wed'},
+];
+
+var timer;
+
 
 class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      comments: [
-        {name: "SeoYeon Moon", content:'Hello World'},
-        {name: "Luna", content: 'I want see Movie'},
-        {name: "Diana", content: 'Today is Wed'},
-      ],
+      comments: [ ],
     };
   }
+
+  componentDidMount() {
+    let comments = this.state.comments;
+    timer = setInterval(() =>{
+      if (comments.length < commentsFromServer.length){
+        let index = comments.length;
+        comments.push(commentsFromServer[index]);
+      } else if (timer) {
+        clearInterval(timer);
+      }
+    },1000);
+  }
+
   render() {
     const {comments} = this.state;
     return (
