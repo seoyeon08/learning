@@ -2,20 +2,20 @@ import logo from './logo.svg';
 import './App.css';
 import Comment from './Comment';
 
-const comments = [
-  {name: "SeoYeon Moon", content:'Hello World'},
-  {name: "Luna", content: 'I want see Movie'},
-  {name: "Diana", content: 'Today is Wed'},
-];
 
 class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-
+      comments: [
+        {name: "SeoYeon Moon", content:'Hello World'},
+        {name: "Luna", content: 'I want see Movie'},
+        {name: "Diana", content: 'Today is Wed'},
+      ],
     };
   }
   render() {
+    const {comments} = this.state;
     return (
     <div className="App" style={{padding: 16, backgroundColor: '#282c34'}}>
       <header className="App-header">
