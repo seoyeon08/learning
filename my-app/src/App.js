@@ -4,9 +4,9 @@ import './App.css';
 import Comment from './Comment';
 
 const commentsFromServer = [
-  {name: "SeoYeon Moon", content:'Hello World'},
-  {name: "Luna", content: 'I want see Movie'},
-  {name: "Diana", content: 'Today is Wed'},
+  {kid: 1, name: "SeoYeon Moon", content:'Hello World'},
+  {kid: 2, name: "Luna", content: 'I want see Movie'},
+  {kid: 3, name: "Diana", content: 'Today is Wed'},
 ];
 
 var timer;
@@ -57,6 +57,8 @@ class App extends React.Component {
         {comments.map((comment,index) => {
           return  (
             <Comment
+              key={comment.id}
+              id={comment.id}
               name={comment.name}
               content={comment.content}/>
           )
