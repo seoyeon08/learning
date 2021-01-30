@@ -36,6 +36,23 @@ const styles = {
     }
 }
 class Comment extends React.Component {
+
+    constructor(props){
+        super(props);
+    }
+
+    componentDidMount() {
+        console.log('componentDidMount() called.');
+    }
+
+    componentDidUpdate(){
+        console.log('componentDidUpdate() called.');
+    }
+
+    componentWillUnmount() {
+        console.log('componentWillUnmount() called.');
+    }
+
     render(){
         const {name, content} = this.props;
         return (
