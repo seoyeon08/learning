@@ -6,7 +6,7 @@ import Greeting from './Chapter07/Greeting'
 import reportWebVitals from './reportWebVitals';
 
 
-ReactDOM.render(<Greeting />, document.getElementById('root'));
+ReactDOM.render(<Greeting isLoggedIn={true}/>, document.getElementById('root'));
 
 // function tick() {
 // 	const element = (
