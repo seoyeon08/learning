@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Chapter06 from './Chapter06';
+import Greeting from './Chapter07/Greeting'
 import reportWebVitals from './reportWebVitals';
 
 
-ReactDOM.render(<Chapter06 />, document.getElementById('root'));
+ReactDOM.render(<Greeting />, document.getElementById('root'));
 
 // function tick() {
 // 	const element = (
