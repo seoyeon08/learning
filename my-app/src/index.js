@@ -2,8 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Chapter06 from './Chapter06';
 import reportWebVitals from './reportWebVitals';
 
+
+ReactDOM.render(<Chapter06 />, document.getElementById('root'));
 
 // function tick() {
 // 	const element = (
@@ -14,13 +17,13 @@ import reportWebVitals from './reportWebVitals';
 // 	);
 	
 // }
-ReactDOM.render(
-    //element,
-    <React.StrictMode>  
-      <App />
-    </React.StrictMode>,
-    document.getElementById('root')
-);
+// ReactDOM.render(
+//     //element,
+//     <React.StrictMode>  
+//       <App />
+//     </React.StrictMode>,
+//     document.getElementById('root')
+// );
 
 //setInterval(tick, 1000);
 // If you want to start measuring performance in your app, pass a function
