@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Greeting from './Chapter07/Greeting'
+import LoginControl from './Chapter07/LoginControl'
 import reportWebVitals from './reportWebVitals';
 
 
-ReactDOM.render(<Greeting isLoggedIn={true}/>, document.getElementById('root'));
+ReactDOM.render(<LoginControl />, document.getElementById('root'));
 
 // function tick() {
 // 	const element = (
