@@ -43,10 +43,18 @@ class LoginControl extends React.Component {
             button = <LoginButton onClick={this.handleLoginClick} />;
         }
 
+        let notiCount = 0;
+
         return (
             <div>
                 <Greeting isLoggedIn={isLoggedIn} />
                 {button}
+                {isLoggedIn && 
+                    <div>
+                        <h5>{new Date().toLocaleTimeString()}</h5>
+                        {notiCount > 0 ? <h5>{'New noti: ' + notiCount}</h5> : null}
+                    </div>
+                }
             </div>
         );
     }
