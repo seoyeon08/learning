@@ -6,27 +6,30 @@ class AttendanceBook extends React.Component {
 
         this.state = {
             students: [
-                {name: 'Mike'},
-                {name: 'Jane'},
-                {name: 'Diana'},
-                {name: 'Luna'},
-                {name: 'Estelle'},
-                {name: 'Silver'},
-                {name: 'Aragon'},
-                {name: 'Agero'},
-                {name: 'Kate'},
+                {id: 1, name: 'Mike'},
+                {id: 2, name: 'Jane'},
+                {id: 3, name: 'Diana'},
+                {id: 4, name: 'Luna'},
+                {id: 5, name: 'Estelle'},
+                {id: 6, name: 'Silver'},
+                {id: 7, name: 'Aragon'},
+                {id: 8, name: 'Agero'},
+                {id: 9, name: 'Kate'},
             ]
         }
     }
 
     render(){
         var {students} = this.state;
-        const studentList = students.map((student) => 
-            <li>{student.name}</li>
+        const studentList = 
         );
 
         return (
-            <ul>{studentList}</ul>
+            <ul>
+                {students.map((student) => 
+                 <li key={student.id}>{student.name}</li>
+                )}
+            </ul>
         )
     }
 }
