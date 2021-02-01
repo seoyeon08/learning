@@ -21,8 +21,6 @@ class AttendanceBook extends React.Component {
 
     render(){
         var {students} = this.state;
-        const studentList = 
-        );
 
         return (
             <ul>
