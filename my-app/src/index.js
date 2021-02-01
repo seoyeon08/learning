@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import LoginControl from './Chapter07/LoginControl'
+import AttendanceBook from './Chapter08/AttendanceBook'
 import reportWebVitals from './reportWebVitals';
 
 
-ReactDOM.render(<LoginControl />, document.getElementById('root'));
+ReactDOM.render(<AttendanceBook />, document.getElementById('root'));
 
 // function tick() {
 // 	const element = (
