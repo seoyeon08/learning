@@ -16,10 +16,10 @@ class SignUp extends React.Component {
     }
 
     render() {
-        var {name} = thsi.state;
+        var {name} = this.state;
 
         return(
-            <from onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit}>
                 <label>
                     Name
                     <input
@@ -29,7 +29,7 @@ class SignUp extends React.Component {
                         onChange={this.handleChange}/>
                 </label>
                 <input type='submit' value='Submit' />
-            </from>
+            </form>
         )
     }
 }
