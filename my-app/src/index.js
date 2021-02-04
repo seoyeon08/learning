@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Calculator from './Chapter10/Calculator'
+import Userprofile from './Chapter11/UserProfile'
 import reportWebVitals from './reportWebVitals';
 
 
-ReactDOM.render(<Calculator />, document.getElementById('root'));
+ReactDOM.render(<Userprofile />, document.getElementById('root'));
 
 // function tick() {
 // 	const element = (
