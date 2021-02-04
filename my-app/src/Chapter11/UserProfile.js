@@ -1,0 +1,72 @@
+import React from 'react';
+
+function FancyBorder(props) {
+    return (
+        <div style={Object.assign(props.style, {
+            display: 'inline-block',
+            borderStyle: 'solid',
+            borderWidth: 2,
+            borderColor: '#80d900',
+            borderRadius: 16,
+            textAlign: 'center' })}>
+            <div style={{
+                padding: 8,
+                backgroundColor: '#80d900',
+                borderTopLeftRadius: 12,
+                borderTopRightRadius: 12 }}>
+                <span style={{ fontsize: 16, }}>
+                    {props.title}
+                </span>
+            </div>
+            <div style={{marginTop: 8}}>
+                {props.children}
+            </div>
+        </div>
+    )
+}
+
+const style = {
+    imageContainer: {
+        width: 50,
+        margin: 'auto',
+    },
+    image: {
+        width: 50,
+        height: 50,
+        borderRadius: 25,
+    },
+    jobContainer: {
+        padding: 8,
+    },
+    jobText: {
+        fontsize: 16,
+    }
+};
+
+class Userprofile extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <FancyBorder
+                title={'SeoYeon'}
+                style={{width: 'calc(33.3% - 12px)', margin: 4}}>
+                <div style={styles.imageContainer}>
+                    <img
+                        alt="profile"
+                        src='https://upload.wikmedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png'
+                        style={style.image} />
+                </div>
+                <div style={styles.jobContainer}>
+                    <span style={styles.jobText}>
+                        {'Software Engineer'}
+                    </span>
+                </div>
+            </FancyBorder>
+        )
+    }
+}
+
+export default Userprofile;
