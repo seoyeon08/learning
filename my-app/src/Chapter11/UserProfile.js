@@ -49,19 +49,20 @@ class Userprofile extends React.Component {
     }
 
     render() {
+        const {user} = this.props;
         return (
             <FancyBorder
-                title={'SeoYeon'}
+                title={user.name}
                 style={{width: 'calc(33.3% - 12px)', margin: 4}}>
                 <div style={styles.imageContainer}>
                     <img
                         alt="profile"
-                        src='https://upload.wikmedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png'
+                        src={user.image}
                         style={styles.image} />
                 </div>
                 <div style={styles.jobContainer}>
                     <span style={styles.jobText}>
-                        {'Software Engineer'}
+                        {user.job}
                     </span>
                 </div>
             </FancyBorder>

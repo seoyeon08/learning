@@ -1,13 +1,12 @@
 import React from 'react';
-import Userprofile from './UserProfile';
 import UserProfile from './UserProfile';
 
-class UserProfile extends React.Component {
+class UserProfileList extends React.Component {
     constructor(props){
         super(props);
 
         this.state = {
-            users: [
+            users : [
                 { id: 1, name: 'SeoYeon', image: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png', job: 'Software Engineer'},
                 { id: 2, name: 'Leo', image: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png', job: 'Student'},
                 { id: 3, name: 'Rabbit', image: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png', job: 'Singer'},
@@ -25,7 +24,7 @@ class UserProfile extends React.Component {
             <div>
                 {users.map((user) => {
                     return (
-                        <Userprofile
+                        <UserProfile
                             user={user} />
                     )
                 })}
@@ -34,4 +33,4 @@ class UserProfile extends React.Component {
     }
 }
 
-export default Userprofile;
+export default UserProfileList;

@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Userprofile from './Chapter11/UserProfile'
+import UserProfileList from './Chapter11/UserProfileList'
 import reportWebVitals from './reportWebVitals';
 
 
-ReactDOM.render(<Userprofile />, document.getElementById('root'));
+ReactDOM.render(<UserProfileList />, document.getElementById('root'));
 
 // function tick() {
 // 	const element = (
