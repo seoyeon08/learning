@@ -25,7 +25,7 @@ function FancyBorder(props) {
     )
 }
 
-const style = {
+const styles = {
     imageContainer: {
         width: 50,
         margin: 'auto',
@@ -57,7 +57,7 @@ class Userprofile extends React.Component {
                     <img
                         alt="profile"
                         src='https://upload.wikmedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png'
-                        style={style.image} />
+                        style={styles.image} />
                 </div>
                 <div style={styles.jobContainer}>
                     <span style={styles.jobText}>
